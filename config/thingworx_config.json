@@ -1,0 +1,13 @@
+{
+    "thingworxServer": {
+        "baseUrl": "http://192.168.20.3:8080/Thingworx",
+        "appKey": "LOAD_FROM_ENV",
+        "disableSslVerification": true,
+        "timeout": 30000
+    },
+    "development": {
+        "defaultThingTemplate": "GenericThing",
+        "author": "LLM_Agent",
+        "logLevel": "info"
+    }
+}

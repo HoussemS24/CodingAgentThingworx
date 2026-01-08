@@ -1,0 +1,191 @@
+{
+    "owner": {
+        "name": "Administrator",
+        "type": "User"
+    },
+    "preview": "",
+    "headers": {
+        "Accept": "application/json",
+        "appKey": "59a7e8dd-6b19-4c0e-9b46-419c071d74f5",
+        "Content-Type": "application/json"
+    },
+    "visibilityPermissions": {
+        "Visibility": []
+    },
+    "lastModifiedDate": 1744749731002,
+    "columns": 0,
+    "parameterDefinitions": {},
+    "aspects": {
+        "isResponsive": true,
+        "isFlex": "true",
+        "mashupType": "mashup"
+    },
+    "designTimePermissions": {
+        "Read": [],
+        "Delete": [],
+        "Create": [],
+        "Metadata": [],
+        "Update": []
+    },
+    "description": "",
+    "homeMashup": "",
+    "avatar": "",
+    "rows": 0,
+    "tags": [],
+    "mashupContent": "{\"UI\":{\"Properties\":{\"Area\":\"Mashup\",\"Style\":\"DefaultMashupStyle\",\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"mashup-root\",\"DisplayName\":\"Mashup\",\"Top\":0,\"Left\":0,\"supportsAutoResize\":true,\"id_index\":21,\"Type\":\"mashup\",\"__TypeDisplayName\":\"Mashup\",\"Width\":1024,\"Height\":618,\"MinWidth\":0,\"MinHeight\":0,\"IgnoreWarningsInViewMashup\":false,\"ResponsiveLayout\":true,\"Title\":\"\",\"TitleBar\":false,\"TitleBarText\":\"Gadget Title Here\",\"MashupToEditGadget\":\"DefaultMashupToEditGadget\",\"EnableParameterEditing\":false,\"Columns\":0,\"Rows\":0,\"TitleBarStyle\":\"DefaultTitleBarStyle\",\"AddToDashboardButtonStyle\":\"DefaultAddToDashboardButtonStyle\",\"ConfigureGadgetButtonStyle\":\"DefaultConfigureGadgetButtonStyle\",\"BGImageRepeat\":\"no-repeat\",\"BGImageSize\":\"auto\",\"IsPrintLayout\":false,\"UseThemeForHybrids\":false,\"StyleTheme\":\"PTC Convergence Theme\",\"UseMasterTheme\":false,\"AddToDashboardButton\":\"SimplePlus\",\"ConfigureGadgetButton\":\"SimpleGear\",\"BGImage\":\"\",\"UseTheme\":false},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":true,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"column\",\"align-items\":\"flex-start\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-2\",\"DisplayName\":\"container-2\",\"LastContainer\":true,\"iconClass\":\"widgets-flexcontainer\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"85px\",\"flex-max-width\":\"\",\"flex-max-height\":\"85px\",\"flex-direction\":\"row\",\"align-items\":\"flex-start\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"fixed\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":false,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-4\",\"DisplayName\":\"container-4\",\"LastContainer\":false,\"isLocked\":false,\"iconClass\":\"widgets-flexcontainer-fixed\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"column\",\"align-items\":\"flex-start\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":false,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-5\",\"DisplayName\":\"container-5\",\"LastContainer\":false,\"isLocked\":false,\"iconClass\":\"widgets-flexcontainer\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"row\",\"align-items\":\"flex-end\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":false,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-9\",\"DisplayName\":\"container-9\",\"LastContainer\":false,\"isLocked\":false,\"iconClass\":\"widgets-flexcontainer\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"ptcslabel\",\"__TypeDisplayName\":\"Label\",\"MultiLine\":true,\"HorizontalAlignment\":\"left\",\"VerticalAlignment\":\"flex-start\",\"DisclosureControl\":\"show-more\",\"LabelText\":\"Timestamp\",\"LabelType\":\"label\",\"overflowShowMoreTxt\":\"[[showMore]]\",\"overflowShowLessTxt\":\"[[showLess]]\",\"UseTheme\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Top\":36,\"Left\":74,\"Z-index\":10,\"Id\":\"ptcslabel-14\",\"DisplayName\":\"ptcs-label-14\",\"LastContainer\":false,\"ResponsiveLayout\":false,\"Margin\":\"5\"},\"Widgets\":[]}]},{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"row\",\"align-items\":\"flex-start\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":false,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-8\",\"DisplayName\":\"container-8\",\"LastContainer\":false,\"isLocked\":false,\"iconClass\":\"widgets-flexcontainer\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"ptcslabel\",\"__TypeDisplayName\":\"Label\",\"MultiLine\":true,\"HorizontalAlignment\":\"left\",\"VerticalAlignment\":\"flex-start\",\"DisclosureControl\":\"show-more\",\"LabelText\":\"Label\",\"LabelType\":\"label\",\"overflowShowMoreTxt\":\"[[showMore]]\",\"overflowShowLessTxt\":\"[[showLess]]\",\"UseTheme\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Top\":41,\"Left\":74,\"Z-index\":10,\"Id\":\"ptcslabel-17\",\"DisplayName\":\"ptcs-label-17\",\"LastContainer\":false,\"ResponsiveLayout\":false,\"Margin\":\"5\"},\"Widgets\":[]}]}]},{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"column\",\"align-items\":\"flex-start\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-6\",\"DisplayName\":\"container-6\",\"LastContainer\":false,\"isLocked\":false,\"iconClass\":\"widgets-flexcontainer\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"row\",\"align-items\":\"flex-end\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":false,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-11\",\"DisplayName\":\"container-11\",\"LastContainer\":false,\"isLocked\":false,\"iconClass\":\"widgets-flexcontainer\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"ptcslabel\",\"__TypeDisplayName\":\"Label\",\"MultiLine\":true,\"HorizontalAlignment\":\"left\",\"VerticalAlignment\":\"flex-start\",\"DisclosureControl\":\"show-more\",\"LabelText\":\"X Position\",\"LabelType\":\"label\",\"overflowShowMoreTxt\":\"[[showMore]]\",\"overflowShowLessTxt\":\"[[showLess]]\",\"UseTheme\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Top\":36,\"Left\":49,\"Z-index\":10,\"Id\":\"ptcslabel-15\",\"DisplayName\":\"ptcs-label-15\",\"LastContainer\":false,\"ResponsiveLayout\":false,\"Margin\":\"5\"},\"Widgets\":[]}]},{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"row\",\"align-items\":\"flex-start\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":false,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-10\",\"DisplayName\":\"container-10\",\"LastContainer\":false,\"isLocked\":false,\"iconClass\":\"widgets-flexcontainer\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"ptcslabel\",\"__TypeDisplayName\":\"Label\",\"MultiLine\":true,\"HorizontalAlignment\":\"left\",\"VerticalAlignment\":\"flex-start\",\"DisclosureControl\":\"show-more\",\"LabelText\":\"Label\",\"LabelType\":\"label\",\"overflowShowMoreTxt\":\"[[showMore]]\",\"overflowShowLessTxt\":\"[[showLess]]\",\"UseTheme\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Top\":36,\"Left\":74,\"Z-index\":10,\"Id\":\"ptcslabel-18\",\"DisplayName\":\"ptcs-label-18\",\"LastContainer\":false,\"ResponsiveLayout\":false,\"Margin\":\"5\"},\"Widgets\":[]}]}]},{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"column\",\"align-items\":\"flex-start\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-7\",\"DisplayName\":\"container-7\",\"LastContainer\":false,\"isLocked\":false,\"iconClass\":\"widgets-flexcontainer\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"row\",\"align-items\":\"flex-end\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":false,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-12\",\"DisplayName\":\"container-12\",\"LastContainer\":false,\"isLocked\":false,\"iconClass\":\"widgets-flexcontainer\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"ptcslabel\",\"__TypeDisplayName\":\"Label\",\"MultiLine\":true,\"HorizontalAlignment\":\"left\",\"VerticalAlignment\":\"flex-start\",\"DisclosureControl\":\"show-more\",\"LabelText\":\"Y Position\",\"LabelType\":\"label\",\"overflowShowMoreTxt\":\"[[showMore]]\",\"overflowShowLessTxt\":\"[[showLess]]\",\"UseTheme\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Top\":26,\"Left\":79,\"Z-index\":10,\"Id\":\"ptcslabel-16\",\"DisplayName\":\"ptcs-label-16\",\"LastContainer\":false,\"ResponsiveLayout\":false,\"Margin\":\"5\"},\"Widgets\":[]}]},{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"row\",\"align-items\":\"flex-start\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-13\",\"DisplayName\":\"container-13\",\"LastContainer\":false,\"isLocked\":false,\"iconClass\":\"widgets-flexcontainer\"},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"ptcslabel\",\"__TypeDisplayName\":\"Label\",\"MultiLine\":true,\"HorizontalAlignment\":\"left\",\"VerticalAlignment\":\"flex-start\",\"DisclosureControl\":\"show-more\",\"LabelText\":\"Label\",\"LabelType\":\"label\",\"overflowShowMoreTxt\":\"[[showMore]]\",\"overflowShowLessTxt\":\"[[showLess]]\",\"UseTheme\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Top\":36,\"Left\":44,\"Z-index\":10,\"Id\":\"ptcslabel-19\",\"DisplayName\":\"ptcs-label-19\",\"LastContainer\":false,\"ResponsiveLayout\":false,\"Margin\":\"5\"},\"Widgets\":[]}]}]}]},{\"Properties\":{\"Area\":\"UI\",\"Type\":\"flexcontainer\",\"__TypeDisplayName\":\"Responsive Container\",\"userCannotRemove\":false,\"UseTheme\":true,\"StyleProperties\":{},\"SourceURL\":\"\",\"Style\":\"DefaultContainerStyle\",\"flex-min-width\":\"\",\"flex-min-height\":\"\",\"flex-max-width\":\"\",\"flex-max-height\":\"\",\"flex-direction\":\"row\",\"align-items\":\"flex-start\",\"justify-content\":\"flex-start\",\"flex-wrap\":\"nowrap\",\"align-content\":\"flex-start\",\"flex-grow\":1,\"flex-shrink\":1,\"flex-basis\":\"auto\",\"flex-size\":\"default\",\"positioning\":\"responsive\",\"EnableExpandCollapse\":false,\"Expanded\":true,\"ShowExpandCollapseTab\":false,\"ExpandCollapseTabLocation\":\"inside\",\"Overlay\":false,\"ResponsiveLayout\":false,\"ShowDataLoading\":true,\"Visible\":true,\"Z-index\":10,\"Id\":\"flexcontainer-3\",\"DisplayName\":\"container-3\",\"LastContainer\":false,\"iconClass\":\"widgets-flexcontainer\",\"isLocked\":true},\"Widgets\":[{\"Properties\":{\"Area\":\"UI\",\"Type\":\"ptcschartline\",\"__TypeDisplayName\":\"Line Chart\",\"HideNotes\":true,\"Disabled\":false,\"XAxisLabel\":\"Time\",\"HideXAxis\":false,\"YAxisLabel\":\"Y-axis\",\"HideYAxis\":false,\"HideLegend\":false,\"SparkView\":false,\"YAxisRulerAlignment\":\"primary\",\"ReverseXAxis\":false,\"ReverseYAxis\":false,\"LegendMaxWidth\":736,\"VerticalAxisMaxWidth\":85,\"HorizontalAxisMaxHeight\":85,\"PointerType\":\"auto\",\"DataPointSelection\":\"auto\",\"StackOrder\":\"auto\",\"HideLines\":true,\"ChartType\":\"scatterchart\",\"StepPosition\":\"center\",\"HideMarkers\":true,\"HideValues\":true,\"MarkerSize\":8,\"XAxisDateFormatToken\":\"\",\"YAxisDateFormatToken\":\"\",\"SelectionMode\":\"multiple\",\"DateRangeHintText\":\"[[selectDateAndTime]]\",\"Label\":\"Line Chart\",\"ValuesTooltip\":\"[[LineChartDefaultTooltip]]\",\"LabelType\":\"sub-header\",\"LabelPosition\":\"top\",\"LabelAlignment\":\"left\",\"CurveFitting\":\"linear\",\"SeriesStacking\":\"none\",\"MultipleDataSources\":false,\"StringSelectAll\":\"[[selectAll]]\",\"StringClearAll\":\"[[clearAll]]\",\"LegendPosition\":\"right\",\"LegendAlignment\":\"start\",\"LegendMarkerShapes\":\"square\",\"LegendFilter\":false,\"MarkerShape\":\"circle\",\"Notes\":\"\",\"NotesPosition\":\"bottom\",\"NotesAlignment\":\"left\",\"XAxisLabelAlignment\":\"start\",\"YAxisLabelAlignment\":\"center\",\"XAxisType\":\"date\",\"XAxisFormat\":\"0000.0\",\"YAxisType\":\"number\",\"YAxisFormat\":\"0000.0\",\"SecondYAxis\":false,\"SecondYAxisLabel\":\"Secondary Y-axis\",\"SecondYAxisLabelAlignment\":\"center\",\"SecondYAxisType\":\"number\",\"SecondYAxisFormat\":\"0000.0\",\"ReverseSecondYAxis\":false,\"ShowXAxisRuler\":false,\"ShowYAxisRuler\":false,\"RulersInFront\":false,\"ShowZeroValueRuler\":false,\"ShowArea\":false,\"ValuesPosition\":\"above\",\"HorizontalZoom\":false,\"HorizontalRangeZoom\":false,\"HorizontalStartZoomLabel\":\"\",\"HorizontalEndZoomLabel\":\"\",\"HorizontalSliderZoom\":false,\"HorizontalSliderZoomMaxLabel\":\"\",\"HorizontalSliderZoomMinLabel\":\"\",\"DirectSelectionZoom\":\"none\",\"DragSelectionZoom\":\"none\",\"HorizontalIntervalControl\":\"none\",\"HorizontalIntervalControlLabel\":\"\",\"HorizontalIntervalAnchorPoint\":\"start\",\"HorizontalIntervalAnchorPointLabel\":\"\",\"StringStart\":\"[[startRange]]\",\"StringEnd\":\"[[endRange]]\",\"ShowHorizontalAnchorPointControl\":false,\"VerticalZoom\":false,\"VerticalSliderZoom\":false,\"VerticalSliderZoomMaxLabel\":\"\",\"VerticalSliderZoomMinLabel\":\"\",\"TabSequence\":0,\"Width\":471,\"Height\":476,\"LabelReset\":\"Reset\",\"UseSampleDataInRuntime\":false,\"NumberOfReferenceLines\":0,\"DataLabel1\":\"X\",\"UseSecondYAxis1\":false,\"ReferenceLine1Axis\":\"xaxis\",\"ReferenceLine1Value\":\"\",\"DataLabel2\":\"Y\",\"UseSecondYAxis2\":false,\"ReferenceLine2Axis\":\"xaxis\",\"ReferenceLine2Value\":\"\",\"DataLabel3\":\"\",\"UseSecondYAxis3\":false,\"ReferenceLine3Axis\":\"xaxis\",\"ReferenceLine3Value\":\"\",\"DataLabel4\":\"\",\"UseSecondYAxis4\":false,\"ReferenceLine4Axis\":\"xaxis\",\"ReferenceLine4Value\":\"\",\"DataLabel5\":\"\",\"UseSecondYAxis5\":false,\"ReferenceLine5Axis\":\"xaxis\",\"ReferenceLine5Value\":\"\",\"DataLabel6\":\"\",\"UseSecondYAxis6\":false,\"ReferenceLine6Axis\":\"xaxis\",\"ReferenceLine6Value\":\"\",\"DataLabel7\":\"\",\"UseSecondYAxis7\":false,\"ReferenceLine7Axis\":\"xaxis\",\"ReferenceLine7Value\":\"\",\"DataLabel8\":\"\",\"UseSecondYAxis8\":false,\"ReferenceLine8Axis\":\"xaxis\",\"ReferenceLine8Value\":\"\",\"DataLabel9\":\"\",\"UseSecondYAxis9\":false,\"ReferenceLine9Axis\":\"xaxis\",\"ReferenceLine9Value\":\"\",\"DataLabel10\":\"\",\"UseSecondYAxis10\":false,\"ReferenceLine10Axis\":\"xaxis\",\"ReferenceLine10Value\":\"\",\"DataLabel11\":\"\",\"UseSecondYAxis11\":false,\"ReferenceLine11Axis\":\"xaxis\",\"ReferenceLine11Value\":\"\",\"DataLabel12\":\"\",\"UseSecondYAxis12\":false,\"ReferenceLine12Axis\":\"xaxis\",\"ReferenceLine12Value\":\"\",\"DataLabel13\":\"\",\"UseSecondYAxis13\":false,\"ReferenceLine13Axis\":\"xaxis\",\"ReferenceLine13Value\":\"\",\"DataLabel14\":\"\",\"UseSecondYAxis14\":false,\"ReferenceLine14Axis\":\"xaxis\",\"ReferenceLine14Value\":\"\",\"DataLabel15\":\"\",\"UseSecondYAxis15\":false,\"ReferenceLine15Axis\":\"xaxis\",\"ReferenceLine15Value\":\"\",\"DataLabel16\":\"\",\"UseSecondYAxis16\":false,\"ReferenceLine16Axis\":\"xaxis\",\"ReferenceLine16Value\":\"\",\"DataLabel17\":\"\",\"UseSecondYAxis17\":false,\"ReferenceLine17Axis\":\"xaxis\",\"ReferenceLine17Value\":\"\",\"DataLabel18\":\"\",\"UseSecondYAxis18\":false,\"ReferenceLine18Axis\":\"xaxis\",\"ReferenceLine18Value\":\"\",\"DataLabel19\":\"\",\"UseSecondYAxis19\":false,\"ReferenceLine19Axis\":\"xaxis\",\"ReferenceLine19Value\":\"\",\"DataLabel20\":\"\",\"UseSecondYAxis20\":false,\"ReferenceLine20Axis\":\"xaxis\",\"ReferenceLine20Value\":\"\",\"DataLabel21\":\"\",\"UseSecondYAxis21\":false,\"ReferenceLine21Axis\":\"xaxis\",\"ReferenceLine21Value\":\"\",\"DataLabel22\":\"\",\"UseSecondYAxis22\":false,\"ReferenceLine22Axis\":\"xaxis\",\"ReferenceLine22Value\":\"\",\"DataLabel23\":\"\",\"UseSecondYAxis23\":false,\"ReferenceLine23Axis\":\"xaxis\",\"ReferenceLine23Value\":\"\",\"DataLabel24\":\"\",\"UseSecondYAxis24\":false,\"ReferenceLine24Axis\":\"xaxis\",\"ReferenceLine24Value\":\"\",\"UseTheme\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Top\":161,\"Left\":259,\"Z-index\":10,\"Id\":\"ptcschartline-20\",\"DisplayName\":\"ptcs-chartline-20\",\"LastContainer\":false,\"ResponsiveLayout\":true,\"XAxisField\":\"timestamp\",\"XAxisMaximumValues\":\"\",\"XAxisMinimumValues\":\"auto\",\"NumberOfSeries\":2,\"DataField1\":\"Channel1_Device1_sensor_x_value\",\"DataField2\":\"Channel1_Device1_sensor_y_value\",\"DataSeriesStyle_StateParameters\":[],\"DataSeriesStyle1_StateParameters\":[],\"DataSeriesStyle2_StateParameters\":[],\"DataSeriesStyle3_StateParameters\":[],\"DataSeriesStyle4_StateParameters\":[],\"DataSeriesStyle5_StateParameters\":[],\"DataSeriesStyle6_StateParameters\":[],\"DataSeriesStyle7_StateParameters\":[],\"DataSeriesStyle8_StateParameters\":[],\"DataSeriesStyle9_StateParameters\":[],\"DataSeriesStyle10_StateParameters\":[],\"DataSeriesStyle11_StateParameters\":[],\"DataSeriesStyle12_StateParameters\":[],\"DataSeriesStyle13_StateParameters\":[],\"DataSeriesStyle14_StateParameters\":[],\"DataSeriesStyle15_StateParameters\":[],\"DataSeriesStyle16_StateParameters\":[],\"DataSeriesStyle17_StateParameters\":[],\"DataSeriesStyle18_StateParameters\":[],\"DataSeriesStyle19_StateParameters\":[],\"DataSeriesStyle20_StateParameters\":[],\"DataSeriesStyle21_StateParameters\":[],\"DataSeriesStyle22_StateParameters\":[],\"DataSeriesStyle23_StateParameters\":[],\"DataSeriesStyle24_StateParameters\":[]},\"Widgets\":[]}]}]},{\"Properties\":{\"Area\":\"UI\",\"Type\":\"autorefreshfunction\",\"__TypeDisplayName\":\"autorefreshfunction\",\"RefreshInterval\":\"2\",\"AutoRefresh\":true,\"ShowDataLoading\":true,\"Visible\":true,\"Top\":null,\"Left\":null,\"Z-index\":10,\"Id\":\"autorefreshfunction-21\",\"DisplayName\":\"refresh\",\"ResponsiveLayout\":false,\"LastContainer\":false},\"Widgets\":[]}]},\"Data\":{\"Session\":{\"DataName\":\"Session\",\"EntityName\":\"\",\"EntityType\":\"Session\",\"Id\":\"session\",\"Services\":[{\"Id\":\"SessionInterface\",\"Name\":\"GetGlobalSessionValues\",\"Characteristic\":\"Services\",\"Target\":\"GetGlobalSessionValues\",\"APIMethod\":\"post\",\"RefreshInterval\":0,\"Parameters\":{}}]},\"UserExtensions\":{\"DataName\":\"UserExtensions\",\"EntityName\":\"\",\"EntityType\":\"UserExtensions\",\"Id\":\"UserExtensions\",\"Services\":[{\"Id\":\"UserExtensionInterface\",\"Name\":\"GetCurrentUserExtensionProperties\",\"Characteristic\":\"Services\",\"Target\":\"GetCurrentUserExtensionProperties\",\"APIMethod\":\"post\",\"RefreshInterval\":0,\"Parameters\":{}}]},\"Things_mqtt.Test-thing\":{\"Id\":\"d9e62257-43c5-4a1f-a6f9-ddc4f42bf871\",\"Services\":[{\"Id\":\"0cd032ea-f976-4dbf-8e7a-3ae2a5e5bb6e\",\"Name\":\"GetPropertyValues\",\"Characteristic\":\"Services\",\"Target\":\"GetPropertyValues\",\"APIMethod\":\"post\",\"RefreshInterval\":0,\"Parameters\":{}},{\"Id\":\"9e07b0ba-9199-41c6-8aaa-83775dc48edb\",\"Name\":\"QueryPropertyHistory\",\"Characteristic\":\"Services\",\"Target\":\"QueryPropertyHistory\",\"APIMethod\":\"post\",\"RefreshInterval\":0,\"Parameters\":{\"maxItems\":\"50\"}}],\"DataName\":\"Things_mqtt.Test-thing\",\"EntityType\":\"Things\",\"EntityName\":\"mqtt.Test-thing\",\"RefreshInterval\":0}},\"Events\":[{\"Id\":\"df82cfa7-b179-4ef8-b68c-0c66b06cc3c1\",\"EventTriggerArea\":\"UI\",\"EventHandlerArea\":\"Data\",\"EventTriggerSection\":\"\",\"EventTriggerId\":\"autorefreshfunction-21\",\"EventTriggerEvent\":\"Refresh\",\"EventHandlerId\":\"Things_mqtt.Test-thing\",\"EventHandlerService\":\"QueryPropertyHistory\"},{\"Id\":\"93dad42f-e90f-4f4b-b6db-e83b3a8187b3\",\"EventTriggerArea\":\"Mashup\",\"EventHandlerArea\":\"Data\",\"EventTriggerSection\":\"\",\"EventTriggerId\":\"mashup-root\",\"EventTriggerEvent\":\"Loaded\",\"EventHandlerId\":\"Things_mqtt.Test-thing\",\"EventHandlerService\":\"GetPropertyValues\"},{\"Id\":\"ecd2f283-a447-4d3d-993d-23b956510ef4\",\"EventTriggerArea\":\"Mashup\",\"EventHandlerArea\":\"Data\",\"EventTriggerSection\":\"\",\"EventTriggerId\":\"mashup-root\",\"EventTriggerEvent\":\"Loaded\",\"EventHandlerId\":\"Things_mqtt.Test-thing\",\"EventHandlerService\":\"QueryPropertyHistory\"},{\"Id\":\"23e1abfb-c45f-492d-8f80-725828c9df1d\",\"EventTriggerArea\":\"UI\",\"EventHandlerArea\":\"Data\",\"EventTriggerSection\":\"\",\"EventTriggerId\":\"autorefreshfunction-21\",\"EventTriggerEvent\":\"Refresh\",\"EventHandlerId\":\"Things_mqtt.Test-thing\",\"EventHandlerService\":\"GetPropertyValues\"}],\"DataBindings\":[{\"Id\":\"9f948c93-fe42-4554-8cda-55ea85246a3a\",\"SourceId\":\"GetPropertyValues\",\"SourceArea\":\"Data\",\"SourceSection\":\"Things_mqtt.Test-thing\",\"SourceDetails\":\"AllData\",\"TargetArea\":\"UI\",\"TargetSection\":\"\",\"TargetId\":\"ptcslabel-18\",\"PropertyMaps\":[{\"SourceProperty\":\"Channel1_Device1_sensor_x_value\",\"SourcePropertyType\":\"Field\",\"SourcePropertyBaseType\":\"NUMBER\",\"TargetProperty\":\"LabelText\",\"TargetPropertyType\":\"property\",\"TargetPropertyBaseType\":\"STRING\"}]},{\"Id\":\"de0ef7aa-916c-4d91-9470-7826e8d1c4e1\",\"SourceId\":\"GetPropertyValues\",\"SourceArea\":\"Data\",\"SourceSection\":\"Things_mqtt.Test-thing\",\"SourceDetails\":\"AllData\",\"TargetArea\":\"UI\",\"TargetSection\":\"\",\"TargetId\":\"ptcslabel-19\",\"PropertyMaps\":[{\"SourceProperty\":\"Channel1_Device1_sensor_y_value\",\"SourcePropertyType\":\"Field\",\"SourcePropertyBaseType\":\"NUMBER\",\"TargetProperty\":\"LabelText\",\"TargetPropertyType\":\"property\",\"TargetPropertyBaseType\":\"STRING\"}]},{\"Id\":\"46ce25b2-282e-4a6c-85ec-d9963ea0764d\",\"SourceId\":\"QueryPropertyHistory\",\"SourceArea\":\"Data\",\"SourceSection\":\"Things_mqtt.Test-thing\",\"SourceDetails\":\"AllData\",\"TargetArea\":\"UI\",\"TargetSection\":\"\",\"TargetId\":\"ptcschartline-20\",\"PropertyMaps\":[{\"SourceProperty\":\"\",\"SourcePropertyType\":\"InfoTable\",\"SourcePropertyBaseType\":\"INFOTABLE\",\"TargetProperty\":\"Data\",\"TargetPropertyType\":\"property\",\"TargetPropertyBaseType\":\"INFOTABLE\"}],\"SourceName\":\"QueryPropertyHistory\"},{\"Id\":\"3eb76377-12e9-482c-b809-56dac3746712\",\"SourceId\":\"GetPropertyValues\",\"SourceArea\":\"Data\",\"SourceSection\":\"Things_mqtt.Test-thing\",\"SourceDetails\":\"AllData\",\"TargetArea\":\"UI\",\"TargetSection\":\"\",\"TargetId\":\"ptcslabel-17\",\"PropertyMaps\":[{\"SourceProperty\":\"Channel1_Device1_sensor_time_value\",\"SourcePropertyType\":\"Field\",\"SourcePropertyBaseType\":\"STRING\",\"TargetProperty\":\"LabelText\",\"TargetPropertyType\":\"property\",\"TargetPropertyBaseType\":\"STRING\"}]}],\"DesignTimePermissions\":{},\"RunTimePermissions\":{},\"CustomMashupCss\":\"\",\"mashupType\":\"mashup\"}",
+    "thingTemplates": [],
+    "runTimePermissions": {
+        "permissions": [
+            {
+                "EventSubscribe": [],
+                "PropertyWrite": [],
+                "PropertyRead": [],
+                "ServiceInvoke": [],
+                "resourceName": "*",
+                "EventInvoke": []
+            }
+        ]
+    },
+    "documentationContent": "",
+    "thingShapes": [],
+    "name": "mqtt.Test-mu",
+    "things": [],
+    "configurationTableDefinitions": {},
+    "projectName": "PTCDefaultProject",
+    "configurationTables": {
+        "MobileSettings": {
+            "isMultiRow": false,
+            "name": "MobileSettings",
+            "description": "Mashup Mobile Settings",
+            "rows": [
+                {
+                    "initialScale": 1,
+                    "heightType": "device-height",
+                    "fullScreenMode": true,
+                    "minimumScale": 0.1,
+                    "disableZoom": false,
+                    "iosStatusBarAppearance": "black-translucent",
+                    "width": "device-width",
+                    "maximumScale": 10,
+                    "iosShortcutIconTitle": "",
+                    "widthType": "device-width",
+                    "height": "device-height"
+                }
+            ],
+            "dataShapeName": "",
+            "ordinal": 0,
+            "isHidden": true,
+            "dataShape": {
+                "fieldDefinitions": {
+                    "initialScale": {
+                        "name": "initialScale",
+                        "aspects": {
+                            "defaultValue": 1,
+                            "friendlyName": "Initial Scale"
+                        },
+                        "description": "The initial zoom scale when the mashup is loaded for the first time",
+                        "baseType": "NUMBER",
+                        "ordinal": 0
+                    },
+                    "heightType": {
+                        "name": "heightType",
+                        "aspects": {
+                            "defaultValue": "device-height",
+                            "friendlyName": "Height Type"
+                        },
+                        "description": "Use the height of the device display, or a custom height (in px)",
+                        "baseType": "STRING",
+                        "ordinal": 0
+                    },
+                    "fullScreenMode": {
+                        "name": "fullScreenMode",
+                        "aspects": {
+                            "defaultValue": true,
+                            "friendlyName": "Full Screen Mode"
+                        },
+                        "description": "Open the mashup in full screen mode",
+                        "baseType": "BOOLEAN",
+                        "ordinal": 0
+                    },
+                    "minimumScale": {
+                        "name": "minimumScale",
+                        "aspects": {
+                            "defaultValue": 0.1,
+                            "friendlyName": "Minimum Scale"
+                        },
+                        "description": "The minimum scale that users can zoom out to",
+                        "baseType": "NUMBER",
+                        "ordinal": 0
+                    },
+                    "disableZoom": {
+                        "name": "disableZoom",
+                        "aspects": {
+                            "defaultValue": false,
+                            "friendlyName": "Disable Zoom"
+                        },
+                        "description": "Disables zooming in and out within the mashup",
+                        "baseType": "BOOLEAN",
+                        "ordinal": 0
+                    },
+                    "iosStatusBarAppearance": {
+                        "name": "iosStatusBarAppearance",
+                        "aspects": {
+                            "defaultValue": "black-translucent",
+                            "friendlyName": "Status Bar Appearance"
+                        },
+                        "description": "The style of the iOS status bar",
+                        "baseType": "STRING",
+                        "ordinal": 0
+                    },
+                    "width": {
+                        "name": "width",
+                        "aspects": {
+                            "friendlyName": "Width"
+                        },
+                        "description": "The width of the mashup page",
+                        "baseType": "STRING",
+                        "ordinal": 0
+                    },
+                    "maximumScale": {
+                        "name": "maximumScale",
+                        "aspects": {
+                            "defaultValue": 10,
+                            "friendlyName": "Maximum Scale"
+                        },
+                        "description": "The maximum scale that users can zoom out to",
+                        "baseType": "NUMBER",
+                        "ordinal": 0
+                    },
+                    "iosShortcutIconTitle": {
+                        "name": "iosShortcutIconTitle",
+                        "aspects": {
+                            "friendlyName": "Shortcut Icon Title"
+                        },
+                        "description": "A title for the mashup shortcut on the iOS home screen",
+                        "baseType": "STRING",
+                        "ordinal": 0
+                    },
+                    "widthType": {
+                        "name": "widthType",
+                        "aspects": {
+                            "defaultValue": "device-width",
+                            "friendlyName": "Width Type"
+                        },
+                        "description": "Use the width of the device display, or a custom width (in px)",
+                        "baseType": "STRING",
+                        "ordinal": 0
+                    },
+                    "height": {
+                        "name": "height",
+                        "aspects": {
+                            "friendlyName": "Height"
+                        },
+                        "description": "The height of the mashup page",
+                        "baseType": "STRING",
+                        "ordinal": 0
+                    }
+                }
+            }
+        }
+    }
+}

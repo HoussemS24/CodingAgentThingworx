@@ -1,0 +1,374 @@
+{
+  "dataShape": {
+    "fieldDefinitions": {
+      "name": {
+        "name": "name",
+        "description": "name",
+        "baseType": "STRING",
+        "ordinal": 0,
+        "aspects": {}
+      },
+      "description": {
+        "name": "description",
+        "description": "description",
+        "baseType": "STRING",
+        "ordinal": 0,
+        "aspects": {}
+      }
+    }
+  },
+  "rows": [
+    {
+      "name": "AddConfigurationTableDefinition",
+      "description": "Adds a ConfigurationTableDefinition and creates and ConfigurationTable from the definition"
+    },
+    {
+      "name": "AddDesignTimePermission",
+      "description": "Add a design time permission"
+    },
+    {
+      "name": "AddRunTimePermission",
+      "description": "Add a run time permission"
+    },
+    {
+      "name": "AddTags",
+      "description": "Append additional tags to an entity"
+    },
+    {
+      "name": "AddVisibilityPermission",
+      "description": "Add a visibility permission"
+    },
+    {
+      "name": "CancelEdit",
+      "description": "Cancel editing mode for an entity"
+    },
+    {
+      "name": "CheckDesignTimePermission",
+      "description": "Check to see if an entity has a specific design time permission for the current user"
+    },
+    {
+      "name": "CheckDesignTimePermissionForGroup",
+      "description": "Check to see if an entity has a specific design time permission for a specific group"
+    },
+    {
+      "name": "CheckDesignTimePermissionForUser",
+      "description": "Check to see if an entity has a specific design time permission for a specific user"
+    },
+    {
+      "name": "CheckPermission",
+      "description": "Check to see if an entity has a specific run time permission for the current user"
+    },
+    {
+      "name": "CheckPermissionForGroup",
+      "description": "Check to see if an entity has a specific run time permission for a specific group"
+    },
+    {
+      "name": "CheckPermissionForUser",
+      "description": "Check to see if an entity has a specific run time permission for a specific user"
+    },
+    {
+      "name": "DeleteAllConfigurationTableRows",
+      "description": "Delete all rows from a multi-row configuration table"
+    },
+    {
+      "name": "DeleteConfigurationTable",
+      "description": "Delete an entire configuration table"
+    },
+    {
+      "name": "DeleteConfigurationTableRows",
+      "description": "Delete one or more rows from a multi-row configuration table"
+    },
+    {
+      "name": "DeleteDesignTimePermission",
+      "description": "Delete a design time permission"
+    },
+    {
+      "name": "DeleteRunTimePermission",
+      "description": "Delete a run time permission"
+    },
+    {
+      "name": "DeleteVisibilityPermission",
+      "description": "Delete a visibility permission"
+    },
+    {
+      "name": "ForceEdit",
+      "description": "Force editing mode for an entity"
+    },
+    {
+      "name": "GetAvatar",
+      "description": "Get avatar image"
+    },
+    {
+      "name": "GetAvatarURL",
+      "description": "Get avatar image url"
+    },
+    {
+      "name": "GetColumns",
+      "description": "Get the number of columnns for this mashup"
+    },
+    {
+      "name": "GetConfigurationChangeHistory",
+      "description": "Get the configuration change history"
+    },
+    {
+      "name": "GetConfigurationTable",
+      "description": "Get a specific configuration table as an InfoTable"
+    },
+    {
+      "name": "GetConfigurationTableDefinition",
+      "description": "Get a specific configuration table definition as an InfoTable"
+    },
+    {
+      "name": "GetConfigurationTableRow",
+      "description": "Get a specific configuration table row as an InfoTable"
+    },
+    {
+      "name": "GetConfigurationTables",
+      "description": "Get a list of configuration tables"
+    },
+    {
+      "name": "GetDescription",
+      "description": "Get the description for an entity"
+    },
+    {
+      "name": "GetDesignTimePermissions",
+      "description": "Get a list of assigned design time permissions"
+    },
+    {
+      "name": "GetDesignTimePermissionsAsJSON",
+      "description": "Get a list of assigned designtime permissions"
+    },
+    {
+      "name": "GetDifferences",
+      "description": "Get the difference between this entity and another"
+    },
+    {
+      "name": "GetDifferencesAsJSON",
+      "description": "Get the difference between this entity and another"
+    },
+    {
+      "name": "GetEditDate",
+      "description": "Get the date edit was requested for an entity"
+    },
+    {
+      "name": "GetEditUserName",
+      "description": "Get the last user who requested edit for an entity"
+    },
+    {
+      "name": "GetEventDefinition",
+      "description": "Get ann event definitions for this thing"
+    },
+    {
+      "name": "GetEventDefinitions",
+      "description": "Get the current event definitions for this thing"
+    },
+    {
+      "name": "GetHomeMashup",
+      "description": "Get home mashup"
+    },
+    {
+      "name": "GetIncomingDependencies",
+      "description": "Get the incoming dependencies"
+    },
+    {
+      "name": "GetIncomingDependenciesAsNetwork",
+      "description": "Get the incoming dependencies as a network"
+    },
+    {
+      "name": "GetInstanceMetadataAsJSON",
+      "description": "Get the instance metadata in JSON format"
+    },
+    {
+      "name": "GetInstanceMetadataWithPermissionsAsJSON",
+      "description": "Get the instance metadata in JSON format"
+    },
+    {
+      "name": "GetLastModifiedDate",
+      "description": "Get the date edit was last modified"
+    },
+    {
+      "name": "GetMetadata",
+      "description": "Get the metadata in InfoTable format"
+    },
+    {
+      "name": "GetMetadataAsJSON",
+      "description": "Get the metadata in JSON format"
+    },
+    {
+      "name": "GetMetadataWithPermissionsAsJSON",
+      "description": "Get the metadata in JSON format"
+    },
+    {
+      "name": "GetOutgoingDependencies",
+      "description": "Get the outgoing dependencies"
+    },
+    {
+      "name": "GetOutgoingDependenciesAsNetwork",
+      "description": "Get the outgoing dependencies as a network"
+    },
+    {
+      "name": "GetOwner",
+      "description": "Get an owner to this entity"
+    },
+    {
+      "name": "GetParameters",
+      "description": "Get the parameter definitions for this mashup"
+    },
+    {
+      "name": "GetPermissionsForCurrentUser",
+      "description": "Get current user permissions"
+    },
+    {
+      "name": "GetPermissionsForGroup",
+      "description": "Get group permissions"
+    },
+    {
+      "name": "GetPermissionsForUser",
+      "description": "Get user permissions"
+    },
+    {
+      "name": "GetPreview",
+      "description": "Get preview image"
+    },
+    {
+      "name": "GetProjectName",
+      "description": "Get the project name of this entity"
+    },
+    {
+      "name": "GetPropertyDefinition",
+      "description": "Get the current property definitions for this thing"
+    },
+    {
+      "name": "GetPropertyDefinitions",
+      "description": "Get the current property definitions for this thing"
+    },
+    {
+      "name": "GetRelatedThings",
+      "description": "Return a list of related things"
+    },
+    {
+      "name": "GetRelatedThingShapes",
+      "description": "Return a list of related thing shapes"
+    },
+    {
+      "name": "GetRelatedThingTemplates",
+      "description": "Return a list of related thing templates"
+    },
+    {
+      "name": "GetRows",
+      "description": "Get the number of rows for this mashup"
+    },
+    {
+      "name": "GetRunTimePermissions",
+      "description": "Get a list of assigned runtime permissions"
+    },
+    {
+      "name": "GetRunTimePermissionsAsJSON",
+      "description": "Get a list of assigned runtime permissions"
+    },
+    {
+      "name": "GetServiceDefinition",
+      "description": "Get a service definition for this thing"
+    },
+    {
+      "name": "GetServiceDefinitions",
+      "description": "Get the current service definitions for this thing"
+    },
+    {
+      "name": "GetSummaryInformation",
+      "description": "Get summary information"
+    },
+    {
+      "name": "GetTags",
+      "description": "Get the tags for an entity"
+    },
+    {
+      "name": "GetTagsAsInfoTable",
+      "description": "Get the tags for an entity as an InfoTable"
+    },
+    {
+      "name": "GetVisibilityPermissions",
+      "description": "Get a list of assigned visibility permissions"
+    },
+    {
+      "name": "GetVisibilityPermissionsAsJSON",
+      "description": "Get a list of assigned visibility permissions"
+    },
+    {
+      "name": "HasIncomingDependencies",
+      "description": "Has incoming dependencies"
+    },
+    {
+      "name": "HasOutgoingDependencies",
+      "description": "Has outgoing dependencies"
+    },
+    {
+      "name": "IsMultiRowTable",
+      "description": "Check if a configuration table is a multi-row table"
+    },
+    {
+      "name": "RemoveTags",
+      "description": "Remove tags from an entity"
+    },
+    {
+      "name": "RequestEdit",
+      "description": "Request editing mode for an entity"
+    },
+    {
+      "name": "SaveConfigurationTables",
+      "description": "Save any changes to configuration tables"
+    },
+    {
+      "name": "SetAvatar",
+      "description": "Set the avatar icon for the entity"
+    },
+    {
+      "name": "SetConfigurationTable",
+      "description": "Set an entire configuration table"
+    },
+    {
+      "name": "SetConfigurationTableRows",
+      "description": "Update/add one or more rows in a multi-row configuration table"
+    },
+    {
+      "name": "SetDescription",
+      "description": "Overwrite/set the description for an entity"
+    },
+    {
+      "name": "SetDesignTimePermissionsAsJSON",
+      "description": "Set a list of assigned design time permissions"
+    },
+    {
+      "name": "SetHomeMashup",
+      "description": "Set home mashup"
+    },
+    {
+      "name": "SetMultiRowConfigurationTable",
+      "description": "Set an entire multi-row configuration table"
+    },
+    {
+      "name": "SetOwner",
+      "description": "Assign an owner to this entity"
+    },
+    {
+      "name": "SetProjectName",
+      "description": "Set the project name of this entity"
+    },
+    {
+      "name": "SetRunTimePermissionsAsJSON",
+      "description": "Set a list of assigned runtime permissions"
+    },
+    {
+      "name": "SetTags",
+      "description": "Overwrite/set the tags for an entity"
+    },
+    {
+      "name": "SetVisibilityPermissionsAsJSON",
+      "description": "Set a list of assigned visibility permissions"
+    },
+    {
+      "name": "UpdateProjectDependencies",
+      "description": "Updates Project's 'dependends-on Projects' by scanning current entity's external dependencies"
+    }
+  ]
+}

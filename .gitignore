@@ -1,0 +1,6 @@
+.env
+*.log
+*.json.bak
+thing_config*.json
+upload_payload.json
+gemini.test-helper.json
