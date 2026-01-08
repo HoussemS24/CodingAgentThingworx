@@ -4,8 +4,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="twx-agent",
-    version="1.0.0",
-    description="ThingWorx Coding Agent with RAG and safety guardrails",
+    version="2.0.0",
+    description="ThingWorx Coding Agent with Local LLM, RAG, and Full App Support",
     author="ThingWorx Development Team",
     packages=find_packages(),
     install_requires=[
@@ -20,6 +20,7 @@ setup(
     entry_points={
         "console_scripts": [
             "twx-agent=src.cli.main:cli",
+            "twx-agent-local=src.cli.production_cli:cli",
         ],
     },
     python_requires=">=3.8",

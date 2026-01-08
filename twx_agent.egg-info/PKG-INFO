@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: twx-agent
-Version: 1.0.0
-Summary: ThingWorx Coding Agent with RAG and safety guardrails
+Version: 2.0.0
+Summary: ThingWorx Coding Agent with Local LLM, RAG, and Full App Support
 Home-page: UNKNOWN
 Author: ThingWorx Development Team
 License: UNKNOWN

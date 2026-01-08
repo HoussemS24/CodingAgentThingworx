@@ -1,25 +1,26 @@
-# ThingWorx Coding Agent
+# ThingWorx Coding Agent - Production Edition
 
-This repository contains the **ThingWorx Coding Agent**, a command-line tool designed to automate and streamline development on the ThingWorx IoT platform. It leverages a Large Language Model (LLM) with Retrieval-Augmented Generation (RAG) to convert natural language prompts into safe, executable ThingWorx operations.
+This repository contains the **ThingWorx Coding Agent**, a production-ready command-line tool designed to automate and streamline development on the ThingWorx IoT platform. It leverages a **local Large Language Model (LLM)** with **Retrieval-Augmented Generation (RAG)** to convert natural language prompts into safe, executable ThingWorx operations, including the creation of **Things, Mashups, and complete Applications**.
 
-The agent is built with robust safety guardrails to prevent destructive actions and ensure all operations are deterministic and testable.
+The agent is built with robust safety guardrails to prevent destructive actions and ensure all operations are deterministic and testable. It runs **100% locally** without requiring external API keys for LLM access.
 
 ## ✨ Features
 
-- **Prompt-Driven Development**: Generate complex ThingWorx entities and services from simple text prompts.
-- **Retrieval-Augmented Generation (RAG)**: Automatically injects relevant context from your local documentation to improve the accuracy and quality of the generated code.
+- **Local LLM Support**: Integrates with any Ollama-compatible endpoint (e.g., `llama3.1:8b`) for fully local and secure operation. No OpenAI API key needed.
+- **Full Application Generation**: Create not just Things, but also complex Mashups and complete ThingWorx Application entities from a single prompt.
+- **Local RAG Engine**: A lightweight, dependency-free RAG engine uses TF-IDF to inject relevant context from your local documentation, improving the accuracy of generated code.
 - **Safety First**: A powerful guardrail system explicitly blocks destructive actions (e.g., delete, reset) and permission escalations.
 - **Deterministic & Testable**: Generates JSON specifications for all operations, enabling validation, logging, and automated testing.
-- **End-to-End Automation**: A complete CLI workflow from prompt to deployed and verified ThingWorx services.
+- **End-to-End Automation**: A complete CLI workflow from prompt to deployed and verified ThingWorx entities.
 - **Secure**: Manages credentials securely using `.env` files, which are never committed to the repository.
-- **Extensible**: Designed to be easily extended with new actions and capabilities.
 
 ## ⚙️ Prerequisites
 
 1.  **Python**: Version 3.8 or higher.
-2.  **ThingWorx Instance**: A running ThingWorx server.
-3.  **ThingWorx AppKey**: An AppKey with appropriate permissions to create and manage entities.
-4.  **ServiceHelper Thing**: A one-time setup of a helper Thing in your ThingWorx instance is required to enable token-efficient service creation. See the setup instructions below.
+2.  **Ollama**: A running Ollama instance to serve the local LLM. See [ollama.com](https://ollama.com) for installation instructions.
+3.  **ThingWorx Instance**: A running ThingWorx server.
+4.  **ThingWorx AppKey**: An AppKey with appropriate permissions to create and manage entities.
+5.  **ServiceHelper Thing**: A one-time setup of a helper Thing in your ThingWorx instance is required to enable token-efficient service creation. See the setup instructions below.
 
 ## 🚀 Setup & Installation
 
@@ -32,16 +33,12 @@ cd CodingAgentThingworx
 
 ### 2. Create a Virtual Environment
 
-It is highly recommended to use a virtual environment to manage dependencies.
-
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
 ### 3. Install Dependencies
-
-Install the required Python packages, including the agent itself in editable mode.
 
 ```bash
 pip install -r requirements.txt
@@ -50,170 +47,123 @@ pip install -e .
 
 ### 4. Configure Environment Variables
 
-Copy the example environment file and fill in your ThingWorx server details. **This file contains secrets and should never be committed to Git.**
+Copy the example environment file and fill in your details. **This file contains secrets and should never be committed to Git.**
 
 ```bash
 cp .env.example .env
 ```
 
-Now, edit the `.env` file with your credentials:
+Now, edit the `.env` file with your credentials and local LLM configuration:
 
 ```dotenv
 # .env
+
+# ThingWorx Configuration
 THINGWORX_APP_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 THINGWORX_BASE_URL=http://your-server.com:8080/Thingworx
+
+# LLM Configuration (Local Ollama)
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=llama3.1:8b
+
+# RAG Configuration
+USE_LOCAL_RAG=true
 ```
 
-### 5. Set up ServiceHelper in ThingWorx (One-Time Setup)
+### 5. Set up Ollama and Download Model
 
-The agent uses a server-side helper service (`ServiceHelper.AddServiceToThing`) to create services efficiently without downloading or uploading large Thing definitions. This is a crucial pattern for performance and token efficiency.
+Ensure your Ollama server is running. Then, pull the desired model:
+
+```bash
+ollama pull llama3.1:8b
+```
+
+### 6. Set up ServiceHelper in ThingWorx (One-Time Setup)
+
+This helper service is crucial for creating services efficiently.
 
 1.  In your ThingWorx Composer, create a new **Thing** named `ServiceHelper` using the `GenericThing` template.
-2.  On the `ServiceHelper` Thing, create a new **Service** with the following properties:
-    *   **Name**: `AddServiceToThing`
-    *   **Inputs**:
-        *   `thingName` (STRING)
-        *   `serviceName` (STRING)
-        *   `serviceCode` (STRING)
-        *   `parameters` (JSON)
-        *   `resultType` (STRING)
-    *   **Output**: `STRING`
+2.  On the `ServiceHelper` Thing, create a new **Service** named `AddServiceToThing` with the inputs defined in `docs/AddServiceToThing_Code.js`.
 3.  Copy the entire JavaScript code from `docs/AddServiceToThing_Code.js` and paste it into the service editor.
 4.  **Save** the service and **Enable** the `ServiceHelper` Thing.
 
 ## 🤖 Usage
 
-The agent provides a command-line interface (`twx-agent`) for all its functionalities.
+The agent provides a dedicated command-line interface for the production app: `twx-agent-local`.
 
-### RAG: Knowledge Base Management
+### 1. Check System Status
 
-First, build the local knowledge base from the documentation files. This step creates vector embeddings of your documents, which the agent uses to find relevant context for your prompts.
-
-```bash
-# Build the knowledge base from the 'docs/' directory
-twx-agent rag build
-```
-
-You can query the knowledge base directly to find information:
+Verify that all components (Ollama, RAG, ThingWorx) are configured correctly.
 
 ```bash
-# Ask a question
-twx-agent rag query "How do I create a service?"
-
-# Get stats about the knowledge base
-twx-agent rag stats
+twx-agent-local status
 ```
 
-### Generating Specifications
+### 2. Build the Knowledge Base
 
-Use the `generate-spec` command to turn a prompt into a JSON specification file. The agent will automatically use the RAG-indexed knowledge base to inform the generation process.
+Build the local RAG knowledge base from the documentation files. This only needs to be done once or when your documentation changes.
 
 ```bash
-# Generate a spec from a prompt
-twx-agent generate-spec "Create a Thing called MyCalculator with a service that adds two numbers, a and b."
+twx-agent-local rag --rebuild
 ```
 
-This command creates a timestamped `.json` file in the `artifacts/specs/` directory. This file is fully validated against the project's schema and guardrails before being saved.
+You can also query the knowledge base directly:
 
-### Executing Specifications
+```bash
+twx-agent-local query "How do I create a mashup?"
+```
+
+### 3. Build ThingWorx Entities
+
+Use the `build` command to generate a JSON specification from a natural language prompt. The agent will automatically use the RAG-indexed knowledge base to inform the generation process.
+
+```bash
+# Build a Thing
+twx-agent-local build "Create a Thing called MySensor with a service that returns a random temperature."
+
+# Build a Mashup
+twx-agent-local build "Create a dashboard mashup named SensorDashboard with a title and a PTC label."
+
+# Build a full Application
+twx-agent-local build "Create a Monitoring App with a home mashup and a settings mashup."
+```
+
+This command creates a timestamped `.json` file in the `artifacts/specs/` directory.
+
+### 4. Execute the Specification
 
 Once you have a specification file, you can execute it against your ThingWorx instance.
 
-First, perform a **dry run** to review the planned API calls without making any actual changes:
+First, perform a **dry run** to review the planned API calls:
 
 ```bash
-twx-agent execute-spec artifacts/specs/<your-spec-file>.json --dry-run
+twx-agent-local execute artifacts/specs/<your-spec-file>.json --dry-run
 ```
 
-If the plan looks correct, execute it for real:
+If the plan looks correct, execute it for real (with confirmation):
 
 ```bash
-twx-agent execute-spec artifacts/specs/<your-spec-file>.json
+twx-agent-local execute artifacts/specs/<your-spec-file>.json
 ```
-
-The agent will prompt for confirmation before executing. All operations are logged to a file in `artifacts/logs/`.
-
-## 📋 Workflow Example
-
-Here is a complete end-to-end workflow:
-
-1.  **Build the knowledge base** (only needs to be done once or when docs change):
-    ```bash
-    twx-agent rag build
-    ```
-
-2.  **Generate a spec** from a prompt:
-    ```bash
-    twx-agent generate-spec "Create a test Thing named E2ETestThing. It should have a service called 'HelloWorld' that takes a 'name' as a STRING input and returns a STRING greeting like 'Hello, {name}!'." 
-    ```
-
-3.  **Review the generated spec** in `artifacts/specs/`.
-
-4.  **Execute the spec** (after confirming the dry run):
-    ```bash
-    twx-agent execute-spec artifacts/specs/<generated-spec-file>.json
-    ```
-
-5.  **Verify in ThingWorx**: The `E2ETestThing` now exists, is enabled, and has a working `HelloWorld` service.
-
-## 🧪 Development & Testing
-
-This project includes a comprehensive test suite to ensure reliability and correctness.
-
-### Running Tests
-
-To run all tests, use `pytest`:
-
-```bash
-# Activate virtual environment first
-source venv/bin/activate
-
-# Run all tests
-pytest
-```
-
-The test suite is divided into several categories:
-
--   **Unit Tests** (`tests/unit/`): Test individual components like the schema validator and guardrails in isolation. These run quickly and have no external dependencies.
--   **Golden Tests** (`tests/golden/`): Test the RAG retrieval system against a set of "golden" queries to ensure it returns the expected documents. These require the knowledge base to be built (`twx-agent rag build`).
--   **E2E Tests** (`tests/e2e/`): Perform a full end-to-end workflow, from spec generation to execution and verification against a live ThingWorx instance. These are skipped by default if a valid `.env` file is not configured.
-
-### Extending the Agent
-
-Adding a new capability (e.g., a new action type) is a structured process. For detailed instructions, please refer to the guide:
-
-**[📄 How to Add a New Action/Capability](docs/Extending_The_Agent.md)**
 
 ## 📂 Project Structure
 
 ```
 .
-├── .github/                # CI/CD workflows
-├── .kb/                    # Persistent RAG knowledge base (ignored by git)
+├── .kb_local/              # Persistent local RAG knowledge base
 ├── artifacts/
 │   ├── logs/               # Execution logs
 │   └── specs/              # Generated JSON specifications
 ├── docs/                   # Project documentation for RAG
 ├── src/
-│   ├── cli/                # CLI command definitions (Click)
-│   ├── executor/           # Logic for executing specs via REST API
-│   ├── generator.py        # LLM-based spec generator
-│   ├── guardrails/         # Safety and security constraints
-│   ├── rag/                # RAG engine for knowledge base management
-│   └── schema/             # JSON schema and validator
+│   ├── cli/                # CLI command definitions
+│   │   └── production_cli.py # Main CLI for the production app
+│   ├── executor/           # Logic for executing specs (Thing, Mashup, App)
+│   ├── llm/                # Local LLM client (Ollama)
+│   ├── rag/                # Local RAG engine (TF-IDF)
+│   └── ...
 ├── tests/
-│   ├── e2e/                # End-to-end tests
-│   ├── fixtures/           # Test data and sample specs
-│   └── unit/               # Unit tests
-├── .env.example            # Template for environment variables
-├── .gitignore
-├── README.md               # This file
-├── requirements.txt        # Python dependencies
-└── setup.py                # Package setup script
+├── .env.example
+├── README.md
+└── setup.py
 ```
-
-## 🔐 Security
-
--   **No Secrets in Git**: The `.gitignore` file is configured to prevent `.env` files, artifacts, and other sensitive information from being committed.
--   **Guardrails**: The executor validates every action against a strict allowlist and blocklist to prevent unintended or destructive operations.
--   **Repo Pattern**: All service creation is funneled through the `ServiceHelper` Thing, following the repository pattern to encapsulate data access and prevent direct, unsafe modifications of Thing entities.

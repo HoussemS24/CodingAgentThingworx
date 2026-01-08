@@ -1,3 +1,4 @@
 [console_scripts]
 twx-agent = src.cli.main:cli
+twx-agent-local = src.cli.production_cli:cli
 
