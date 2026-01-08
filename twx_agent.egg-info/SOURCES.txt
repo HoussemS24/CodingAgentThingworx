@@ -1,0 +1,8 @@
+README.md
+setup.py
+twx_agent.egg-info/PKG-INFO
+twx_agent.egg-info/SOURCES.txt
+twx_agent.egg-info/dependency_links.txt
+twx_agent.egg-info/entry_points.txt
+twx_agent.egg-info/requires.txt
+twx_agent.egg-info/top_level.txt

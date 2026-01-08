@@ -1,6 +1,51 @@
+# Secrets and credentials
 .env
+*.key
+*.pem
+
+# Artifacts
+artifacts/
+.kb/
+
+# Logs
 *.log
+logs/
+
+# Backups and temporary files
 *.json.bak
 thing_config*.json
 upload_payload.json
 gemini.test-helper.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/

@@ -1,0 +1,3 @@
+[console_scripts]
+twx-agent = src.cli.main:cli
+

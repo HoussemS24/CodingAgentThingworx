@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "metadata": {
+    "generated_at": "2025-01-08T10:00:00Z",
+    "prompt": "Create a Calculator Thing with Add and Multiply services"
+  },
+  "actions": [
+    {
+      "type": "CreateThing",
+      "params": {
+        "name": "TestCalculator",
+        "thingTemplateName": "GenericThing",
+        "description": "Test calculator for E2E testing"
+      },
+      "description": "Create Calculator Thing"
+    },
+    {
+      "type": "EnableThing",
+      "params": {
+        "thingName": "TestCalculator"
+      },
+      "description": "Enable Calculator Thing"
+    },
+    {
+      "type": "AddServiceToThing",
+      "params": {
+        "thingName": "TestCalculator",
+        "serviceName": "Add",
+        "serviceCode": "/**\n * Service: Add\n * Created: 2025-01-08 10:00 by Coding Agent\n * Last Modified: 2025-01-08 10:00 by Coding Agent\n * \n * Description:\n *   Adds two numbers and returns the result\n * \n * Inputs:\n *   - a (NUMBER): First number\n *   - b (NUMBER): Second number\n * \n * Output:\n *   - NUMBER: Sum of a and b\n * \n * Change Log:\n *   2025-01-08 - Coding Agent - Initial creation\n */\nvar result = a + b;",
+        "parameters": {
+          "a": "NUMBER",
+          "b": "NUMBER"
+        },
+        "resultType": "NUMBER"
+      },
+      "description": "Add service for addition"
+    },
+    {
+      "type": "AddServiceToThing",
+      "params": {
+        "thingName": "TestCalculator",
+        "serviceName": "Multiply",
+        "serviceCode": "/**\n * Service: Multiply\n * Created: 2025-01-08 10:00 by Coding Agent\n * Last Modified: 2025-01-08 10:00 by Coding Agent\n * \n * Description:\n *   Multiplies two numbers and returns the result\n * \n * Inputs:\n *   - a (NUMBER): First number\n *   - b (NUMBER): Second number\n * \n * Output:\n *   - NUMBER: Product of a and b\n * \n * Change Log:\n *   2025-01-08 - Coding Agent - Initial creation\n */\nvar result = a * b;",
+        "parameters": {
+          "a": "NUMBER",
+          "b": "NUMBER"
+        },
+        "resultType": "NUMBER"
+      },
+      "description": "Multiply service for multiplication"
+    }
+  ]
+}

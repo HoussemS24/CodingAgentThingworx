@@ -1,0 +1,207 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ThingWorx Coding Agent Specification",
+  "description": "Schema for ThingWorx automation specifications",
+  "type": "object",
+  "required": ["version", "metadata", "actions"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version of the spec format"
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["generated_at", "prompt"],
+      "properties": {
+        "generated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of spec generation"
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Original user prompt"
+        },
+        "rag_sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["file", "section"],
+            "properties": {
+              "file": {
+                "type": "string"
+              },
+              "section": {
+                "type": "string"
+              },
+              "relevance": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          },
+          "description": "RAG sources used for generation"
+        }
+      }
+    },
+    "actions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["type", "params"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "CreateThing",
+              "UpdateThing",
+              "EnableThing",
+              "AddServiceToThing",
+              "AddPropertyDefinition",
+              "SetProperty",
+              "ExecuteService"
+            ],
+            "description": "Action type - only safe operations allowed"
+          },
+          "params": {
+            "type": "object",
+            "description": "Action-specific parameters"
+          },
+          "description": {
+            "type": "string",
+            "description": "Human-readable description of this action"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "CreateThing"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "params": {
+                  "required": ["name", "thingTemplateName"],
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z0-9._-]+$"
+                    },
+                    "thingTemplateName": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "EnableThing"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "params": {
+                  "required": ["thingName"],
+                  "properties": {
+                    "thingName": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "AddServiceToThing"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "params": {
+                  "required": ["thingName", "serviceName", "serviceCode", "parameters", "resultType"],
+                  "properties": {
+                    "thingName": {
+                      "type": "string"
+                    },
+                    "serviceName": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z][a-zA-Z0-9_]*$"
+                    },
+                    "serviceCode": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "parameters": {
+                      "type": "object",
+                      "patternProperties": {
+                        "^[a-zA-Z][a-zA-Z0-9_]*$": {
+                          "type": "string",
+                          "enum": ["STRING", "NUMBER", "INTEGER", "LONG", "BOOLEAN", "DATETIME", "LOCATION", "JSON", "INFOTABLE"]
+                        }
+                      }
+                    },
+                    "resultType": {
+                      "type": "string",
+                      "enum": ["STRING", "NUMBER", "INTEGER", "LONG", "BOOLEAN", "DATETIME", "LOCATION", "JSON", "INFOTABLE", "NOTHING"]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "AddPropertyDefinition"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "params": {
+                  "required": ["thingName", "name", "type"],
+                  "properties": {
+                    "thingName": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z][a-zA-Z0-9_]*$"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": ["STRING", "NUMBER", "INTEGER", "LONG", "BOOLEAN", "DATETIME", "LOCATION", "JSON", "INFOTABLE"]
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
