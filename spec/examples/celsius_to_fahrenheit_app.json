@@ -1,0 +1,42 @@
+﻿{
+    "things":  [
+                   {
+                       "properties":  [
+
+                                      ],
+                       "template":  "GenericThing",
+                       "name":  "CelsiusToFahrenheitThing",
+                       "enable":  true,
+                       "services":  [
+                                        {
+                                            "outputs":  {
+                                                            "baseType":  "NUMBER",
+                                                            "description":  "fahrenheit"
+                                                        },
+                                            "inputs":  [
+                                                           {
+                                                               "name":  "c",
+                                                               "baseType":  "NUMBER",
+                                                               "required":  true
+                                                           }
+                                                       ],
+                                            "description":  "Convert C to F",
+                                            "name":  "CelsiusToFahrenheit",
+                                            "code":  "var f = (c * 9/5) + 32;\nf;"
+                                        }
+                                    ]
+                   }
+               ],
+    "mashups":  [
+                    {
+                        "mashupContent":  "{\"layout\":{\"height\":600,\"width\":800,\"type\":\"Absolute\"},\"description\":\"Minimal\",\"mashupName\":\"MVP_MinimalMashup\",\"widgets\":[]}",
+                        "description":  "MVP placeholder",
+                        "name":  "CelsiusToFahrenheitMashup"
+                    }
+                ],
+    "apiVersion":  "1.0",
+    "metadata":  {
+                     "name":  "Celsius to Fahrenheit App",
+                     "description":  "Thing + convert service + mashup"
+                 }
+}

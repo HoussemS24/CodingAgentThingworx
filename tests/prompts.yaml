@@ -1,0 +1,10 @@
+﻿- id: p1
+  prompt: "Create a quadratic solver thing with a SolveQuadratic service and a simple mashup."
+- id: p2
+  prompt: "Create an addition tool: Thing AdditionThing with service Add(x,y)->NUMBER and a mashup."
+- id: p3
+  prompt: "Create a converter: Celsius to Fahrenheit service with input c."
+- id: p4
+  prompt: "Create a simple mashup placeholder named DemoMashup."
+- id: p5
+  prompt: "Create a Thing with NUMBER property temperature and a service GetTemp that returns it."

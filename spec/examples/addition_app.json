@@ -1,0 +1,47 @@
+﻿{
+    "things":  [
+                   {
+                       "properties":  [
+
+                                      ],
+                       "template":  "GenericThing",
+                       "name":  "AdditionThing",
+                       "enable":  true,
+                       "services":  [
+                                        {
+                                            "outputs":  {
+                                                            "baseType":  "NUMBER",
+                                                            "description":  "sum"
+                                                        },
+                                            "inputs":  [
+                                                           {
+                                                               "name":  "x",
+                                                               "baseType":  "NUMBER",
+                                                               "required":  true
+                                                           },
+                                                           {
+                                                               "name":  "y",
+                                                               "baseType":  "NUMBER",
+                                                               "required":  true
+                                                           }
+                                                       ],
+                                            "description":  "Add two numbers",
+                                            "name":  "Add",
+                                            "code":  "var z = x + y;\nz;"
+                                        }
+                                    ]
+                   }
+               ],
+    "mashups":  [
+                    {
+                        "mashupContent":  "{\"layout\":{\"height\":600,\"width\":800,\"type\":\"Absolute\"},\"description\":\"Minimal\",\"mashupName\":\"MVP_MinimalMashup\",\"widgets\":[]}",
+                        "description":  "MVP placeholder",
+                        "name":  "AdditionMashup"
+                    }
+                ],
+    "apiVersion":  "1.0",
+    "metadata":  {
+                     "name":  "Addition App",
+                     "description":  "Thing + Add service + mashup"
+                 }
+}

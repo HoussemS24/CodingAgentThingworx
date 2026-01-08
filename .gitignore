@@ -1,6 +1,11 @@
-.env
+﻿.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+cache/
+logs/
+out/
+reports/
 *.log
-*.json.bak
-thing_config*.json
-upload_payload.json
-gemini.test-helper.json
+*.pkl

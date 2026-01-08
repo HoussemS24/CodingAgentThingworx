@@ -1,0 +1,63 @@
+﻿{
+    "things":  [
+                   {
+                       "properties":  [
+                                          {
+                                              "baseType":  "NUMBER",
+                                              "name":  "a"
+                                          },
+                                          {
+                                              "baseType":  "NUMBER",
+                                              "name":  "b"
+                                          },
+                                          {
+                                              "baseType":  "NUMBER",
+                                              "name":  "c"
+                                          }
+                                      ],
+                       "template":  "GenericThing",
+                       "name":  "QuadraticSolverThing",
+                       "enable":  true,
+                       "services":  [
+                                        {
+                                            "outputs":  {
+                                                            "baseType":  "INFOTABLE",
+                                                            "description":  "roots"
+                                                        },
+                                            "inputs":  [
+                                                           {
+                                                               "name":  "a",
+                                                               "baseType":  "NUMBER",
+                                                               "required":  true
+                                                           },
+                                                           {
+                                                               "name":  "b",
+                                                               "baseType":  "NUMBER",
+                                                               "required":  true
+                                                           },
+                                                           {
+                                                               "name":  "c",
+                                                               "baseType":  "NUMBER",
+                                                               "required":  true
+                                                           }
+                                                       ],
+                                            "description":  "Solve ax^2 + bx + c = 0",
+                                            "name":  "SolveQuadratic",
+                                            "code":  "var result = Resources[\"InfoTableFunctions\"].CreateInfoTableFromDataShape({infoTableName:\"InfoTable\", dataShapeName:\"\"});\nresult.AddField({name:\"root1\", baseType:\"STRING\"});\nresult.AddField({name:\"root2\", baseType:\"STRING\"});\nvar disc = b*b - 4*a*c;\nif (disc \u003c 0) {\n  var real = (-b/(2*a));\n  var imag = Math.sqrt(-disc)/(2*a);\n  result.AddRow({root1: real + \" + \" + imag + \"i\", root2: real + \" - \" + imag + \"i\"});\n} else {\n  var sqrtD = Math.sqrt(disc);\n  var r1 = (-b + sqrtD) / (2*a);\n  var r2 = (-b - sqrtD) / (2*a);\n  result.AddRow({root1: r1.toString(), root2: r2.toString()});\n}\nresult;"
+                                        }
+                                    ]
+                   }
+               ],
+    "mashups":  [
+                    {
+                        "mashupContent":  "{\"layout\":{\"height\":600,\"width\":800,\"type\":\"Absolute\"},\"description\":\"Minimal\",\"mashupName\":\"MVP_MinimalMashup\",\"widgets\":[]}",
+                        "description":  "MVP placeholder",
+                        "name":  "QuadraticSolverMashup"
+                    }
+                ],
+    "apiVersion":  "1.0",
+    "metadata":  {
+                     "name":  "Quadratic Solver App",
+                     "description":  "Thing + service + mashup"
+                 }
+}
